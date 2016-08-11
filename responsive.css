@@ -1,0 +1,142 @@
+@media only screen and (max-width: 480px){
+	.mobile-header{
+		display: block;
+	}
+	.mobile-hide{
+		display: none;
+	}
+	.mobile-show{
+		display: block;
+	}
+	.header{
+		display: none;
+	}
+	.home-section-title span {
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-weight: 300;
+	    font-size: 3.5em;
+	    position: relative;
+	}
+	.home-wrapper{
+		position: absolute;
+    	bottom: 3%;
+	}
+	.home-section-title span:before {
+    	top: 88%;
+    	left: -7%;
+	}
+	.home-section-title span:after {
+	    top: 88%;
+	    right: -19%;
+	}
+	.home-section-title span:before, .home-section-title span:after {
+	    content: '';
+	    position: absolute;
+	    border-top: 1px solid #fff;
+	    width: 20%;
+	}
+	.overview-content, .why-goregaon-content {
+	    height: 50%;
+	    position: relative;
+	    background: #eff0f0;
+	    display: block;
+	}
+	.overview-inner-content, .why-goregaon-inner-content{
+		padding-top:25px;
+	}
+	.section-title{
+		font-size: 24px;
+	}
+	.section-title:before{
+		width:90px;
+	}
+	.content{
+		font-size: 0.6em;
+	}
+	.showcase-box{
+		height: 100px;
+	}
+	.showcase-wrapper{
+		margin: 0px auto;
+		display: table;
+		height: 100%;
+	}
+	.showcase-inner-wrapper{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.why-goregaon-bg{
+		height: 50%;
+	}
+	.amenities-box{
+		width: 30%;
+		color: #fff;
+		margin: 0px 25px;
+		vertical-align: top;
+	}
+	.amenities-box img{
+		width: 100%;
+	}
+	.form-text{
+		width: 100%;
+	}
+	.enquire-wrapper{
+		width: auto;
+	}
+	.form-fieldset{
+		width: 100%;
+		display: block;
+	}
+	.enquire-actualform{
+		width: 100%;
+	}
+	.authorize-checkbox {
+    	margin-left: 0px;
+	}
+	#message{
+		width: 100%;
+	}
+	.authorize-checkbox, .form-submit{
+    	margin-left: 0px;
+	}
+	.footer-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	.footer-right{
+		text-align: center;
+		float: none;
+		margin-top: 10px;
+	}
+	.footer-right p{
+		font-size: 0.6em;
+	}
+	.amenities-box p{
+		margin-top:10px;
+		font-size: 0.7em;
+	}
+	.gallery-inner-wrapper {
+    	padding-top: 45%;
+	}
+	.bx-wrapper .bx-viewport{
+		height: 200px !important;
+	}
+	.bx-wrapper img{
+		width: 85%;
+	}
+	.bx-wrapper .bx-next{
+		right: 5%;
+	}
+	.bx-wrapper .bx-prev{
+		left: 5%;
+	}
+}
+@media only screen and (max-width: 350px){
+    .fancybox-opened{
+        left: 10px !important;
+    }
+    .overview-content, .why-goregaon-content{
+        height: 55%;
+    }
+}

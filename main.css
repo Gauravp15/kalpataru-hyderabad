@@ -1,0 +1,817 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.section {
+    height:100vh !important;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    background: rgba(0,0,0,0.4);
+    padding: 10px 0px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+.header-wrapper{
+    height: 100%;
+}
+.nav-up{
+    margin-top: -100px;
+}
+.nav-down{
+    margin-top: 0px;
+}
+.residency-logo{
+    height: 100%;
+    display: table;
+    width: 15%;
+    float: left;
+}
+.residency-logo img{
+	width: 100%;
+}
+.residency-logo a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.right-header{
+    text-align: right;
+}
+.right-lower-header{
+    margin-top: 20px;
+}
+.right-lower-header ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.right-lower-header ul li{
+    display: inline-block;
+    margin: 0px 8px;
+}
+.right-lower-header ul li a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.right-lower-header ul li a:hover{
+    color: #00aeef;
+}
+#home{
+    background: url('../img/kalpataru-comes-to-hyderabad.jpg');
+    background-size: cover;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  	position: relative;
+}
+.home-wrapper{
+     display: table-cell;
+    vertical-align: middle;
+}
+.home-section-title span{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size:3em;
+    position: relative;
+}
+.home-section-title span:before,.home-section-title span:after{
+    content: '';
+    position: absolute;
+    border-top: 1px solid #fff;
+    width: 55%;
+}
+.home-section-title span:before{
+    top: calc(50% - 0.5px);
+    left: -60%;
+}
+.home-section-title span:after{
+    top: calc(50% - 0.5px);
+    right: -60%;
+}
+.overview-image{
+    background: url('../img/sanath.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.home-tailor-image{
+    background: url('../img/home-tailor.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.vastu-image{
+    background: url('../img/vastu.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.legacy-image{
+    background: url('../img/kalpataru-legacy.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.overview-content, .why-goregaon-content{
+    display: table;
+    height: 100%;
+    background: #eff0f0;
+}
+.overview-inner-content, .why-goregaon-inner-content{
+    display: table-cell;
+    vertical-align: middle;
+    width: 75%;
+}
+.section-title{
+    position: relative;
+    color: #595d5f;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+.section-title:before{
+    content: '';
+    border-top: 3px solid #00aeef;
+    position: absolute;
+    top:-5px;
+    left:0px;
+    height: 3px;
+    width: 120px;
+}
+.content{
+    color: #595d5f;
+    font-size: 0.9em;
+}
+.caption-line{
+    font-weight: bold;
+}
+.showcase-wrapper{
+    margin: 25px auto;
+}
+.showcase-box{
+    height: 200px;
+    max-height: 275px;
+    margin: 8px 0px;
+    padding: 0px 8px;
+}
+.showcase-box img{
+    width: 100%;
+    height: 100%;
+}
+.why-goregaon-wrapper{
+    height: 100%;
+}
+.why-goregaon-bg{
+    background: url('../img/why-goregaon.jpg') no-repeat;
+    background-position: 0px -150px;
+    background-size: cover;
+    height: 100%;
+}
+#amenities{
+    background: url('../img/amenities-bg.jpg') no-repeat;
+    background-size: cover;
+}
+.amenities-wrapper{
+    display: table;
+    height: 100%;
+}
+.amenities-inner-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.amenities-box {
+    width: 24%;
+    vertical-align: top;
+    margin: 15px 0px;
+    display: inline-block;
+}
+.amenities-upper-row{
+    margin-bottom: 40px;
+}
+.amenities-upper-row p, .amenities-lower-row p {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 0px;
+}
+.amenities-upper-row img, .amenities-lower-row img{
+    width: 50%;
+}
+.enquire-form{
+	background: #202020;
+	height: 410px;
+}
+.enquire-wrapper{
+	width: 60%;
+	margin: 0px auto;
+	display: table;
+	height: 100%;
+}
+.enquire-inner-wrapper{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+.footer{
+	background: #202020;
+	border-top:1px solid #636363;
+	padding: 10px 0px;
+}
+.footer-right{
+	text-align: right;
+	float: right;
+	color: #fff;
+	padding-top: 5px;
+}
+.authorize-checkbox{
+	margin-left: 12%;
+}
+.authorize-checkbox input[type="checkbox"] {
+    display: none;
+}
+.enquire_now fieldset label {
+    padding-right: 8px;
+    width: 25%;
+}
+.authorize-checkbox input[type=checkbox]:checked + label:before {
+    content: "\2022";
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+    color: #00aeef;
+	cursor: pointer;
+}
+.authorize-checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: #fff;
+    -moz-box-shadow: inset 0 0 2px #000;
+    -webkit-box-shadow: inset 0 0 2px #000;
+    box-shadow: inner inset 0 0 2px #000;
+    border-radius: 50%;
+ }
+ .enquire-actualform{
+ 	width: 80%;
+ 	margin: 10px auto;
+ }
+ .form-fieldset{
+ 	display: inline-block;
+ 	width: 49%;
+ 	margin: 10px 0px;
+ }
+ .form-label{
+ 	display: inline-block;
+ 	width: 70px;
+ 	vertical-align: top;
+ 	color: #fff;
+ }
+ .message-fieldset{
+ 	margin: 10px 0px;
+ 	width: 100%;
+ }
+ #message{
+ 	resize: none;
+ 	width: 84%;
+ 	height:100px;
+ 	outline: none;
+ }
+ .form-text{
+ 	width: 70%;
+ 	outline: none;
+ 	padding: 2px;
+ }
+ .white{
+ 	color: #fff;
+ }
+ .form-submit{
+ 	text-transform: uppercase;
+ 	color: #fff;
+ 	width: 80px;
+ 	background: #00aeef;
+ 	padding: 5px 0px;
+ 	text-align: center;
+ 	border: none;
+ 	margin: 15px 0px 15px 12%;
+ }
+ .mobile-header{
+ 	height:60px;
+ 	position: fixed;
+ 	width: 100%;
+ 	top:0px;
+ 	z-index: 9;
+ 	background: rgba(0,0,0,0.5);
+ }
+ .mobile-header .radiance-logo{
+ 	height: 100%;
+ 	width: 40%;
+ 	float: left;
+ }
+ .mobile-header .radiance-logo img{
+ 	width: 100%;
+ }
+ .mobile-kalpataru-logo{
+ 	position: absolute;
+ 	top:70px;
+ 	left:20px;
+ }
+ .nav-icon{
+    float:right;
+    position: relative;
+    z-index: 9999;
+}
+.border-bottom{
+    height:2px;
+    width: 25px;
+    background: #fff;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    margin-top:25px;
+    transition: all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+    -webkit-transition:all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+}
+.border-bottom:before, .border-bottom:after{
+    content:'';
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    width: 25px;
+    transition: all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+    -webkit-transition:all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+}
+.border-bottom:before{
+    top:-6px;
+}
+.border-bottom:after{
+    bottom: -6px;
+}
+.mobile-show{
+	display: none;
+}
+ .mobile-nav{
+ 	position: fixed;
+ 	right:-150px;
+ 	top:0px;
+ 	width: 150px;
+ 	height: 100%;
+ 	background: rgba(0,0,0,0.5);
+ 	transition: all 1s ease;
+ 	-webkit-transition: all 1s ease;
+ 	-moz-transition: all 1s ease;
+ }
+ .mobile-nav.visible{
+ 	right: 0px;
+ }
+ .mobile-nav ul{
+ 	padding-top: 50px;
+ 	text-align: left;
+ }
+ .mobile-nav ul li{
+ 	display: block;
+ 	margin: 10px 15px;
+ }
+ .mobile-nav ul li a{
+ 	transition: all 0.5s ease;
+ 	-webkit-transition: all 0.5s ease;
+ 	-moz-transition: all 0.5s ease;
+ }
+ .mobile-nav ul li a:hover{
+ 	color: #00aeef;
+ }
+ .close{
+    background: transparent;
+    transition: all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+    -webkit-transition:all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+    opacity: 1;
+}
+.close:hover, .close:focus{
+    opacity: 1;
+}
+.close:before, .close:after{
+    background: #211a52;
+    transition: all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+    -webkit-transition:all 500ms cubic-bezier(0.95, -0.23, 0.09, 1.43);
+    transform-origin:50% 50%;
+    -webkit-transform-origin:50% 50%;
+    -moz-transform-origin:50% 50%;
+}
+.close:before{
+    top:0px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.close:after{
+    top:0px;
+    bottom:initial;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+}
+.mobile-overview{
+	background: url('../img/overview-section.jpg') no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+.mobile-amenities-wrapper{
+	height: 90%;
+}
+#map-canvas{
+    height: 100%;
+}
+#view360{
+	overflow: hidden;
+	cursor: move;
+}
+.gallery-slider {
+    padding: 0px;
+    margin: 0px;
+}
+.bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: none;
+    left: 0px;
+    margin: 0px auto;
+    width: 53% !important;
+    background: transparent;
+}
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+}
+.gallery-slider li {
+    width: 60%;
+    text-align: center;
+}
+.bx-wrapper img {
+    width: 60%;
+    margin: 20px auto;
+}
+.gallery-inner-wrapper{
+	padding-top: 5%;
+}
+.awards-list{
+    width: 80%;
+    margin: 0px auto;
+    list-style: none;
+}
+.awards{
+    min-height: 400px;
+    margin: 50px 0px;
+    position: relative;
+}
+.awards-box{
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left:40px;
+}
+.year{
+    font-weight: 600;
+    font-size: 34px;
+    margin: 0px;
+    padding: 10px 0px;
+    color: #444444;
+}
+.awards-inner-list p{
+    margin: 20px 0px;
+    color: #444444;
+    font-weight: 400;
+}
+.awards-inner-list p:before{
+    content: '';
+    background: url('../img/badge.png') no-repeat;
+    height: 21px;
+    width: 20px;
+    left:0px;
+    position: absolute;
+    padding-right: 15px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+.awards-inner-list p:first-child:before{
+    background: url('../img/trophy.png') no-repeat;
+}
+.illustrations img{
+    width: 100%;
+}
+.owl-prev, .owl-next{
+    display: block !important;
+    width: 48px;
+    height: 48px;
+}
+#achievements_slider .owl-controls{
+    position: absolute;
+    top:40%;
+    width: 100%;
+}
+#achievements_slider .owl-prev{
+    position: absolute;
+    left: -10%;
+    background: url('../img/left-arrow.png') no-repeat;
+    height: 48px;
+    width: 48px;
+    display: block;
+    content: '';
+}
+#achievements_slider .owl-next{
+    position: absolute;
+    right: -10%;
+    width: 48px;
+    background: url('../img/right-arrow.png') no-repeat;
+    height: 48px;
+    display: block;
+    content: '';
+}
+.year-timeline{
+    border-top:1px solid #dadada;
+}
+.year-timeline-inner{
+    width: 80%;
+    margin: 0px auto;   
+}
+.year-timeline p{
+    display: inline-block;
+    width: 30%;
+}
+#milestones_recognitions{
+    padding-top: 50px;
+}
+.legacy-title{
+    font-size: 26px;
+}
+/-* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
