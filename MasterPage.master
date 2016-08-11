@@ -1,0 +1,63 @@
+<!-- <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="UserControls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="UserControls/HomeSection.ascx" TagPrefix="uc1" TagName="HomeSection" %>
+<%@ Register Src="UserControls/SanathSection.ascx" TagPrefix="uc1" TagName="SanathSection" %>
+<%@ Register Src="UserControls/HomeTailorSection.ascx" TagPrefix="uc1" TagName="HomeTailorSection" %>
+<%@ Register Src="UserControls/GallerySection.ascx" TagPrefix="uc1" TagName="GallerySection" %>
+<%@ Register Src="UserControls/Vastu.ascx" TagPrefix="uc1" TagName="VastuSection" %>
+<%@ Register Src="UserControls/FloorPlanSection.ascx" TagPrefix="uc1" TagName="FloorPlanSection" %>
+<%@ Register Src="UserControls/AmenitiesSection.ascx" TagPrefix="uc1" TagName="AmenitiesSection" %>
+<%@ Register Src="UserControls/Legacy.ascx" TagPrefix="uc1" TagName="LegacySection" %>
+<%@ Register Src="UserControls/Milestones.ascx" TagPrefix="uc1" TagName="MilestonesSection" %>
+<%@ Register Src="UserControls/LocationSection.ascx" TagPrefix="uc1" TagName="LocationSection" %>
+<%@ Register Src="UserControls/EnquirySection.ascx" TagPrefix="uc1" TagName="FormSection" %>
+<%@ Register Src="UserControls/ScriptSection.ascx" TagPrefix="uc1" TagName="ScriptSection" %>
+<%@ Register Src="UserControls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %> -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Kalpataru Residency</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+    <uc1:Header runat="server" ID="Header" />
+    <div class="main-wrapper">
+        <uc1:HomeSection runat="server" ID="HomeSection" />
+        <uc1:SanathSection runat="server" ID="SanathSection" />
+        <uc1:HomeTailorSection runat="server" ID="HomeTailorSection" />
+        <uc1:GallerySection runat="server" ID="GallerySection" />
+        <uc1:VastuSection runat="server" ID="VastuSection" />
+        <uc1:FloorPlanSection runat="server" ID="FloorPlanSection" />
+        <uc1:AmenitiesSection runat="server" ID="AmenitiesSection" />
+        <uc1:LegacySection runat="server" ID="LegacySection" />
+        <uc1:MilestonesSection runat="server" ID="MilestonesSection" />
+        <uc1:LocationSection runat="server" ID="LocationSection" />
+        <uc1:FormSection runat="server" ID="FormSection" />
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+<!------------------- Footer start ------------------>
+    <uc1:Footer runat="server" ID="Footer" />
+<!------------------- Footer Ends ------------------>
+    <uc1:ScriptSection runat="server" ID="Scripts" />
+</body>
+</html>
